@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Test</title>
+	<script language="JavaScript">
+	function TrainerSession()  {
+		// List of characters (by training order)
+		this.characterList = ['1','R','2','A','3','W','4','P','5','W','6','B','7','C','8','D','9','E','0','F','G'];
+
+		// Number of characters we currently are training for
+		this.characterIndex = 1;
+	}
+
+	TrainerSession.prototype.generateMessageNumber = function() {
+		return '1';
+	}
+
+	TrainerSession.prototype.generatePriority = function()  {
+		return 'R';
+	}
+
+	TrainerSession.prototype.generateHX = function()  {
+		return 'A';
+	}
+
+	sess = new TrainerSession();
+	console.log(sess.generateMessageNumber());
+	console.log(sess.generatePriority());
+	console.log(sess.generateHX());
+	</script>
+</head>
+<body>
+</body>
+</html>
